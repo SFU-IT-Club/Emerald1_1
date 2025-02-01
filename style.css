@@ -3,7 +3,56 @@
     --secondary: rgb(12, 10, 10);
 }
 
-body {
+
+
+header{
+    background-color: red;
+    height: 10vh;
+    text-align: center;
+    padding: 1em;
+}
+
+table{
+    margin-left: 20px;
+    border: 2px solid black;
+    border-collapse: separate;
+    border-spacing: 20px 20px;
+    border-radius: 10px;
+    padding: 0%;
+}
+
+
+tr{
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+
+td{
+    border: 1px solid black;
+    border-collapse:collapse;
+    border-radius: 5px;
+  
+}
+
+th{
+    border: 0px solid black;
+    border-collapse:collapse;
+} 
+
+h1,h2,h3 {
+    margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+ /* body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -80,7 +129,7 @@ footer {
 }
 /* Include existing styles from the home page CSS */
 
-/* Additional Styles for Rising Desks Page */
+/* Additional Styles for Rising Desks Page
 main {
     padding: 20px;
 }
@@ -108,7 +157,7 @@ main {
 /* Include existing styles from the home page CSS */
 
 /* Additional Styles for Health Benefits Page */
-main.health-benefits {
+/* main.health-benefits {
     padding: 20px;
 }
 
@@ -134,7 +183,7 @@ main.health-benefits {
 /* Include existing styles from the home page CSS */
 
 /* Additional Styles for Contact Us Page */
-main.contact-form {
+/* main.contact-form {
     padding: 20px;
     text-align: center;
 }
@@ -166,15 +215,15 @@ input[type="submit"]:hover {
     background-color: #555;
 }
 
-/* Responsive Styles */
+/* Responsive Styles 
 @media only screen and (max-width: 600px) {
     form {
         width: 100%;
     }
-}
+} */ 
 
 /* Additional Styles for Health Benefits Page */
-main.health-benefits {
+/* main.health-benefits {
     padding: 20px;
 }
 
@@ -206,10 +255,10 @@ main.health-benefits {
 {
     width: 200px;
     height: 200px;
-}
+} */
 /* Include existing styles from the home page CSS */
 
-/* Additional Styles for Special Offers and Health Benefits Sections */
+/* Additional Styles for Special Offers and Health Benefits Sections 
 .special-offers,
 .health-benefits {
     padding: 20px;
@@ -242,5 +291,5 @@ main.health-benefits {
     padding: 10px;
     margin: 0;
     color: #555;
-}
+} */
 
