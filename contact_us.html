@@ -6,41 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Contact Us - Your Standing Desks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- Navigation Bar (reuse from home page) -->
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="rising_desks.html">Rising Desks</a></li>
-            <li><a href="contact_us.html">Contact Us</a></li>
-            <li><a href="health_benefits.html">Health Benefits</a></li>
-            <li><a href="#">Basket</a></li>
-        </ul>
+        <div class="navbar">
+            <img src="images/logo-mobile.png">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rising_desks.html">Courses</a></li>
+                <li><a href="contact_us.html">Clubs and Activites</a></li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Main Content - Contact Us Form -->
-    <main class="contact-form">
-        <h1>Contact Us</h1>
-
-        <form action="submit_form.php" method="post">
-            <label for="first-name">First Name:</label>
-            <input type="text" id="first-name" name="first-name" required>
-
-            <label for="last-name">Last Name:</label>
-            <input type="text" id="last-name" name="last-name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <input type="submit" value="Submit">
-        </form>
-    </main>
+    <div class="contact-us-container">
+        <div class="contact-about">
+            <div class="">
+                <p class="c-campus">Strategy First Panchan Tower Teaching Center</p>
+                <i class="fa-solid fa-location-dot"></i><span class="c-location">No.8, Ground Floor, Corner of Dhamazedi and Bargayar Road, Sanchaung Township, Yangon</span>
+            </div>
+            <div class="">
+                <p class="c-campus">Strategy First Teaching Center-1</p>
+                <i class="fa-solid fa-location-dot"></i><span class="c-location">No.239, Pyay Road (Near Myaynigone City Mart) Sanchaung Township, Yangon.</span>
+            </div>
+            <div class="">
+                <p class="c-campus">Strategy First Teaching Center-2</p>
+                <i class="fa-solid fa-location-dot"></i><span class="c-location">No.237, Corner of U Wizara Road and Dhamazedi Road, Sanchaung Township, Yangon.</span>
+            </div>
+            <div class="">
+                <p class="c-campus">Strategy First Teaching Center-3</p>
+                <i class="fa-solid fa-location-dot"></i><span class="c-location">No.142-146, Sule Pagoda Road, Kyauktada Township, Yangon.</span>
+            </div>
+            <div class="">
+                <p class="c-campus">Strategy First Mandalay Teaching Center</p>
+                <i class="fa-solid fa-location-dot"></i><span class="c-location">Block 4, Unit 8, Mingalar Mandalay, 73 Road, Corner of Thazin and Ngu Shwe War Road, Mandalay.</span>
+            </div>
+            
+        </div>
+        <div class="contact-form">
+            <h1>Contact Us</h1>
+    
+            <form action="submit_form.php" method="post">
+                <div class="form-first-row">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                </div>
+                <div>
+                    <textarea name="message" placeholder="Message" rows="4" required></textarea>
+                </div>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
 
     <!-- Footer (reuse from home page) -->
     <footer>
-        <p>&copy; 2023 Your Standing Desks. All rights reserved.</p>
+        <p>&copy; 2025, Strategy First International College. All rights reserved.</p>
     </footer>
 </body>
 
