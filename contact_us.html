@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Contact Us - Your Standing Desks</title>
+    <title>Contact Us - Strategy First</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
 <body>
     <!-- Navigation Bar (reuse from home page) -->
-    <nav>
-        <div class="navbar">
+    <nav class="c-nav-container">
+        <div class="c-navbar">
             <img src="images/logo-mobile.png">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -50,7 +51,7 @@
         <div class="contact-form">
             <h1>Contact Us</h1>
     
-            <form action="submit_form.php" method="post">
+            <form id="contactus">
                 <div class="form-first-row">
                     <input type="text" name="name" placeholder="Name" required>
                     <input type="email" name="email" placeholder="Email" required>
@@ -61,7 +62,7 @@
                 <div>
                     <textarea name="message" placeholder="Message" rows="4" required></textarea>
                 </div>
-                <input type="submit" value="Submit">
+                <button type="submit">Submit</button>
             </form>
         </div>
     </div>
@@ -70,6 +71,8 @@
     <footer>
         <p>&copy; 2025, Strategy First International College. All rights reserved.</p>
     </footer>
+
+    <script src="./main.js"></script>
 </body>
 
 </html>
