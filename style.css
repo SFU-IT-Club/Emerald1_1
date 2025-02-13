@@ -86,21 +86,123 @@ th{
     border-collapse:collapse;
 } 
 
-h1,h2,h3 {
+/* h1,h2,h3 {
     margin-left: 20px;
+} */
+
+/* dcbm page */
+.page-container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.text-gray{
+    color: gray;
+    margin: 5px 0 10px 0;
+}
+.course-container{
+    padding: 25px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+.course-container h4{
+    margin: 15px 0;
+}
+.course-flex{
+    display: flex;
+    gap: 25px;
+}
+.subj-container{
+    width: 50%;
+    margin-bottom: 10px;
+}
+.subjects p{
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #d7dbdd;
+    border-radius: 5px;
+}
+.color-red{
+    color: red;
+}
+.lecturers h4{
+    text-align: center;
+    margin: 30px 0;
+}
+.swiper {
+    width: 100%;
+    height: 230px;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lecturer-img p{
+    font-size: 15px;
+}
+.lecturer-img img{
+    width: 180px;
+    height: 180px;
+}
+.flex1{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.flex1 .img{
+    width: 220px;
+    height: fit-content;
+}
+.flex1 .img h5{
+    margin: 5px 0;
+}
+.flex1 img{
+    width: 100%;
+    height: 220px;
 }
 
 /* contact us page */
 .contact-us-container{
-    min-height: 80vh;
+    min-height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.campus-card{
+    position: relative;
+    margin-top: 50px;
+}
+
+.campus-card img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+.campus-info{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+}
+.campus-info:hover{
+    background-color: rgba(0,0,0,0.5);
+    opacity: 100;
+}
+.contact-header{
+    text-align: center;
+    margin: 30px;
+}
 .contact-about{
     width: 25%;
-    margin: 60px 80px 0 0;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -120,7 +222,19 @@ h1,h2,h3 {
     flex-direction: column;
     gap: 20px;
 }
-
+.c-flex2{
+    display: flex;
+    align-items: center;
+}
+.c-flex2 i{
+    padding-right: 20px;
+}
+.c-flex2 h4{
+    margin-bottom: 5px;
+}
+.c-flex2 p{
+    color: #5d6d7e;
+}
 
 .contact-form input, .contact-form textarea{
     width: 95%;
@@ -160,10 +274,12 @@ h1,h2,h3 {
 }
 
 .c-campus{
+    color: white;
     margin-bottom: 6px;
 }
 .c-location{
-    color: #777;
+    color: white;
+    margin-bottom: 10px;
 }
 
 footer{
@@ -173,6 +289,15 @@ footer{
 }
 
 @media(max-width:1000px){
+    .course-flex{
+        flex-direction: column;
+    }
+    .subj-container{
+        width: 100%;
+    }
+    .flex1{
+        row-gap: 0;
+    }
     .c-navbar{
         flex-direction: column;
         align-items: center;
@@ -182,21 +307,29 @@ footer{
     }
     .contact-us-container{
         flex-direction: column;
-        padding: 50px;
+        padding: 0 15px;
+    }
+    .c-flex2 div h4{
+        display: none;
     }
     .contact-about{
         width: 100%;
         text-align: center;
         height: fit-content;
-        margin-right: 0px;
+        margin: 0 0 20px 0;
     }
     .contact-form{
         width: 100%;
         height: fit-content;
-        order: -1;
+        margin: 0px;
     }
     .contact-form input, .contact-form textarea{
-        width: 97%;
+        width: 95%;
+    }
+    .campus-card img{
+        width: 300px;
+        height: 250px;
+        object-fit: cover;
     }
 }
 

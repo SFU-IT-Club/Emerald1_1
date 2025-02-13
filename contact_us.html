@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Contact Us - Strategy First</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 
@@ -23,34 +25,88 @@
         </div>
     </nav>
 
-    <!-- Main Content - Contact Us Form -->
+    <!-- Main Content -->
+    <div class="flex1">
+        <div class="campus-card">
+            <img src="./images/panchan_campus.jpg">
+            <div class="campus-info">
+                <p class="c-campus">Strategy First Panchan Tower Teaching Center</p>
+                <div class="c-location">
+                    <span class=""><i class="fa-solid fa-location-dot"></i> No.8, Ground Floor, Corner of Dhamazedi and
+                        Bargayar Road, Sanchaung Township, Yangon</span>
+                </div>
+            </div>
+        </div>
+        <div class="campus-card">
+            <img src="./images/pyay_campus.jpg">
+            <div class="campus-info">
+                <p class="c-campus">Strategy First Teaching Center-1</p>
+                <div class="c-location">
+                    <span class=""><i class="fa-solid fa-location-dot"></i> No.239, Pyay Road (Near Myaynigone City
+                        Mart) Sanchaung Township, Yangon</span>
+                </div>
+            </div>
+        </div>
+        <div class="campus-card">
+            <img src="./images/uwisaya_campus.jpg">
+            <div class="campus-info">
+                <p class="c-campus">Strategy First Teaching Center-2</p>
+                <div class="c-location">
+                    <span class=""><i class="fa-solid fa-location-dot"></i> No.237, Corner of U Wizara Road and
+                        Dhamazedi Road, Sanchaung Township, Yangon</span>
+                </div>
+            </div>
+        </div>
+        <div class="campus-card">
+            <img src="./images/sule_campus.jpg">
+            <div class="campus-info">
+                <p class="c-campus">Strategy First Teaching Center-3</p>
+                <div class="c-location">
+                    <span class=""><i class="fa-solid fa-location-dot"></i> No.142-146, Sule Pagoda Road, Kyauktada
+                        Township, Yangon</span>
+                </div>
+            </div>
+        </div>
+        <div class="campus-card">
+            <img src="./images/mdy_campus.jpg">
+            <div class="campus-info">
+                <p class="c-campus">Strategy First Mandalay Teaching Center</p>
+                <div class="c-location">
+                    <span class=""><i class="fa-solid fa-location-dot"></i> Block 4, Unit 8, Mingalar Mandalay, 73 Road,
+                        Corner of Thazin and Ngu Shwe War Road, Mandalay</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1 class="contact-header">Contact Us</h1>
+
     <div class="contact-us-container">
         <div class="contact-about">
-            <div class="">
-                <p class="c-campus">Strategy First Panchan Tower Teaching Center</p>
-                <i class="fa-solid fa-location-dot"></i><span class="c-location">No.8, Ground Floor, Corner of Dhamazedi and Bargayar Road, Sanchaung Township, Yangon</span>
+            <div class="c-flex2">
+                <h3><i class="fa-solid fa-phone"></i></h3>
+                <div>
+                    <h4>Phone</h4>
+                    <p>09 76543 8000</p>
+                </div>
             </div>
-            <div class="">
-                <p class="c-campus">Strategy First Teaching Center-1</p>
-                <i class="fa-solid fa-location-dot"></i><span class="c-location">No.239, Pyay Road (Near Myaynigone City Mart) Sanchaung Township, Yangon.</span>
+            <div class="c-flex2">
+                <h3><i class="fa-solid fa-phone"></i></h3>
+                <div>
+                    <h4>Phone</h4>
+                    <p>09 450 1777 71</p>
+                </div>
             </div>
-            <div class="">
-                <p class="c-campus">Strategy First Teaching Center-2</p>
-                <i class="fa-solid fa-location-dot"></i><span class="c-location">No.237, Corner of U Wizara Road and Dhamazedi Road, Sanchaung Township, Yangon.</span>
+            <div class="c-flex2">
+                <h3><i class="fa-solid fa-envelope"></i></h3>
+                <div>
+                    <h4>Email Address</h4>
+                    <p>ug@mystrategyfirst.com</p>
+                </div>
             </div>
-            <div class="">
-                <p class="c-campus">Strategy First Teaching Center-3</p>
-                <i class="fa-solid fa-location-dot"></i><span class="c-location">No.142-146, Sule Pagoda Road, Kyauktada Township, Yangon.</span>
-            </div>
-            <div class="">
-                <p class="c-campus">Strategy First Mandalay Teaching Center</p>
-                <i class="fa-solid fa-location-dot"></i><span class="c-location">Block 4, Unit 8, Mingalar Mandalay, 73 Road, Corner of Thazin and Ngu Shwe War Road, Mandalay.</span>
-            </div>
-            
         </div>
         <div class="contact-form">
-            <h1>Contact Us</h1>
-    
+
             <form id="contactus">
                 <div class="form-first-row">
                     <input type="text" name="name" placeholder="Name" required>
@@ -73,6 +129,23 @@
     </footer>
 
     <script src="./main.js"></script>
+    <script>
+        emailjs.init("j-3NRaQF0yjNoCcsk");
+
+        document.getElementById("contactus").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm("service_57aj46r", "template_4d9y3kh", this).then(
+                function () {
+                    alert("Message sent successfully!");
+                    document.getElementById("contactus").reset();
+                },
+                function (error) {
+                    alert("Failed to send message. Error: " + JSON.stringify(error));
+                }
+            );
+        });
+    </script>
 </body>
 
 </html>
