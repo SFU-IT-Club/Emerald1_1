@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -17,85 +17,55 @@
 </head>
 
 <body>
-    <!-- Navigation Bar (reuse from home page) -->
+    <!-- Navigation Bar -->
     <nav class="c-nav-container">
         <div class="c-navbar">
-            <img src="images/logo-mobile.png">
+            <img src="images/logo-mobile.png" alt="Strategy First Logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="Business_Management.html">Business Management</a></li>
-                <li><a href="dcbm_page.html">Computer Science with Business Management</a></li>
-                <li><a href="dcpage.html">Computer Science</a></li>
-                <li><a href="contact_us.html">Contant US</a></li>
+                <li class="c-dropdown-container">
+                    <a href="#" class="c-dropdown-toggle">Programmes <i class="fas fa-chevron-down ml-2 text-xs"></i></a>
+                    <div class="c-dropdown-content">
+                        <a href="Business_Management.html">Business Management</a>
+                        <a href="dcbm_page.html">Computing with Business Management</a>
+                        <a href="dcpage.html">Computer Science</a>
+                    </div>
+                </li>
+                <li><a href="#">Clubs and Activities</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
         </div>
     </nav>
+    <!-- Navigation Bar -->
 
-    <!-- Header Section (reuse from home page) -->
-    <header>
-        <h1>Welcome to Your Standing Desks</h1>
-        <p>Discover Special Offers on Healthier Workspaces</p>
-    </header>
+    
 
-    <!-- Special Offers Section -->
-    <section class="special-offers">
-        <h2>Special Offers</h2>
-
-        <!-- Offer 1 -->
-        <div class="offer-card">
-            <img src="offer1.jpg" alt="Special Offer 1">
-            <h3>Exclusive Desk Bundle</h3>
-            <p>Get a desk, chair, and accessories at a special discounted price.</p>
-        </div>
-
-        <!-- Offer 2 -->
-        <div class="offer-card">
-            <img src="offer2.jpg" alt="Special Offer 2">
-            <h3>Free Shipping</h3>
-            <p>Enjoy free shipping on all standing desk orders for a limited time.</p>
-        </div>
-
-        <!-- Add more special offers as needed -->
-
-    </section>
-
-    <!-- Health Benefits Section -->
-    <section class="health-benefits">
-        <h2>Health Benefits</h2>
-
-        <!-- Benefit 1 -->
-        <div class="benefit-card">
-            <img src="improved_posture.jpg" alt="Improved Posture">
-            <h3>Improved Posture</h3>
-            <p>Using standing desks encourages better posture, reducing the risk of back and neck pain.</p>
-        </div>
-
-        <!-- Benefit 2 -->
-        <div class="benefit-card">
-            <img src="increased_energy.jpg" alt="Increased Energy">
-            <h3>Increased Energy</h3>
-            <p>Standing while working can boost energy levels and reduce feelings of fatigue.</p>
-        </div>
-
-        <!-- Add more health benefits as needed -->
-
-    </section>
-
-    <!-- Modal Popup Window (reuse from home page) -->
-    <div class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Hello! Welcome to Your Standing Desks.</p>
-        </div>
-    </div>
-
-    <!-- Footer Section (reuse from home page) -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2023 Your Standing Desks. All rights reserved.</p>
-    </footer>
 
-    <!-- JavaScript for Modal Interaction (optional) -->
-    <script src="script.js"></script>
+        <nav class="c-nav-container">
+            <div class="c-navbar">
+                <img src="images/logo-mobile.png">
+                
+
+                <div "class = "footerContainer">
+                    <div class = "socialIcon">
+                        <ul>
+                            <a href=""><i class = "fa-brands fa-facebook"></i></a>
+                            <a href=""><i class = "fa-brands fa-instagram"></i></a>
+                            <a href=""><i class = "fa-brands fa-tiktok"></i></a>
+                        </ul>
+                    </div>
+                </div>
+                <p>&copy; 2025, Strategy First International College. All rights reserved.</p>
+            
+            </div>
+        </nav>
+
+    </footer>
+    <!-- Footer -->
+    
+    <script src="main.js"></script>
 </body>
 
 </html>

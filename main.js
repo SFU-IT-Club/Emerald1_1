@@ -17,3 +17,16 @@ var swiper = new Swiper(".mySwiper", {
         240: { slidesPerView: 1 }  // Mobile screens (1 image per slide)
     }
 });
+
+  const dropdown = document.getElementById('programmesDropdown');
+
+  dropdown.addEventListener('mouseenter', () => {
+    const menu = dropdown.querySelector('.dropdown-content');
+    menu.style.display = 'flex';
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    const menu = dropdown.querySelector('.dropdown-content');
+    menu.style.display = 'none';
+  });
+

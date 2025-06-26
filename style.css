@@ -37,19 +37,64 @@ body{
 .c-navbar ul{
     list-style-type: none;
     display: flex;
-    gap: 50px;
+    gap: 40px;
 }
 
 .c-navbar a{
     text-decoration: none;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     padding-bottom: 5px;
 }
 
 .c-navbar a:hover{
     color: black;
     border-bottom: 2px solid black;
+}
+
+.c-dropdown-container {
+    position: relative;
+}
+
+.c-dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: var(--primary); /* Same as navbar background */
+    min-width: 220px; /* Wider to accommodate longer text */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* Ensure it appears above other content */
+    top: 100%; /* Position right below the parent nav item */
+    left: 0;
+    border-radius: 0 0 8px 8px; /* Rounded bottom corners */
+    overflow: hidden; /* Ensures child elements don't overflow rounded corners */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transform: translateY(10px); /* Slight animation for dropdown */
+}
+
+.c-dropdown-container:hover .c-dropdown-content {
+    display: block; /* Show on hover */
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.c-dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: normal; /* Override bold from main nav for dropdown items */
+    border-bottom: none; /* Remove border from dropdown items */
+}
+
+.c-dropdown-content a:hover {
+    background-color: var(--accent); /* Highlight on hover */
+    color: var(--text-color); /* Darker text on hover background */
+    border-bottom: none; /* No border for dropdown items */
 }
 
 header{
@@ -285,7 +330,6 @@ th{
 footer{
     margin-top: 20px;
     text-align: center;
-    padding: 10px 0;
 }
 
 @media(max-width:1000px){

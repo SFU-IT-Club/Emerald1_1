@@ -13,19 +13,26 @@
 </head>
 
 <body>
-    <!-- Navigation Bar (reuse from home page) -->
+    <!-- Navigation Bar -->
     <nav class="c-nav-container">
         <div class="c-navbar">
-            <img src="images/logo-mobile.png">
+            <img src="images/logo-mobile.png" alt="Strategy First Logo">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="Business_Management.html">Business Management</a></li>
-                <li><a href="dcbm_page.html">Computer Science with Business Management</a></li>
-                <li><a href="dcpage.html">Computer Science</a></li>
-                <li><a href="contact_us.html">Contant US</a></li>
+                <li class="c-dropdown-container">
+                    <a href="#" class="c-dropdown-toggle">Programmes <i class="fas fa-chevron-down ml-2 text-xs"></i></a>
+                    <div class="c-dropdown-content">
+                        <a href="Business_Management.html">Business Management</a>
+                        <a href="dcbm_page.html">Computing with Business Management</a>
+                        <a href="dcpage.html">Computer Science</a>
+                    </div>
+                </li>
+                <li><a href="#">Clubs and Activities</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
         </div>
     </nav>
+    <!-- Navigation Bar -->
 
     <!-- Main Content -->
     <div class="flex1">
@@ -125,10 +132,30 @@
         </div>
     </div>
 
-    <!-- Footer (reuse from home page) -->
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025, Strategy First International College. All rights reserved.</p>
+
+        <nav class="c-nav-container">
+            <div class="c-navbar">
+                <img src="images/logo-mobile.png">
+                
+
+                <div "class = "footerContainer">
+                    <div class = "socialIcon">
+                        <ul>
+                            <a href=""><i class = "fa-brands fa-facebook"></i></a>
+                            <a href=""><i class = "fa-brands fa-instagram"></i></a>
+                            <a href=""><i class = "fa-brands fa-tiktok"></i></a>
+                        </ul>
+                    </div>
+                </div>
+                <p>&copy; 2025, Strategy First International College. All rights reserved.</p>
+            
+            </div>
+        </nav>
+
     </footer>
+    <!-- Footer -->
 
     <script src="./main.js"></script>
     <script>
