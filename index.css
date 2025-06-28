@@ -1,5 +1,5 @@
 :root{
-    --primary: rgb(201, 20, 20);
+    --primary: rgb(199, 48, 48);
     --secondary: rgb(12, 10, 10);
 }
 
@@ -95,4 +95,14 @@ body{
     background-color: var(--accent); /* Highlight on hover */
     color: var(--text-color); /* Darker text on hover background */
     border-bottom: none; /* No border for dropdown items */
+}
+
+@media(max-width:1000px){
+    .c-navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    .c-navbar ul{
+        margin-top: 10px;
+    }
 }
